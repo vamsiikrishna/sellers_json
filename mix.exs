@@ -9,7 +9,11 @@ defmodule Sellersjson.MixProject do
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      package: package()
+      package: package(),
+      description: description(),
+      docs: [
+        main: "readme",
+      ]
     ]
   end
 
@@ -25,7 +29,8 @@ defmodule Sellersjson.MixProject do
     [
       {:poison, "~> 3.1"},
       {:httpoison, "~> 1.6"},
-      {:ex_json_schema, "~> 0.6.1"}
+      {:ex_json_schema, "~> 0.6.1"},
+      {:ex_doc, "~> 0.18", only: :dev},
     ]
   end
 
@@ -37,5 +42,9 @@ defmodule Sellersjson.MixProject do
         GitHub: "https://github.com/vamsiikrishna/sellers_json"
       }
     ]
+  end
+
+  defp description do
+    "sellers.json validator"
   end
 end
