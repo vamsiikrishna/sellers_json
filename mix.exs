@@ -12,7 +12,7 @@ defmodule Sellersjson.MixProject do
       package: package(),
       description: description(),
       docs: [
-        main: "readme",
+        main: "Sellersjson",
       ]
     ]
   end
