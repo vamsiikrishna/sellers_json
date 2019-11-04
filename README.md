@@ -1,6 +1,8 @@
 # Sellersjson
 
-**TODO: Add description**
+**Validator for IAB Tech Lab's sellers.json**
+
+
 
 ## Installation
 
